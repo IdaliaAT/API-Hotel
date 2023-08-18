@@ -1,0 +1,16 @@
+# Conexion a Base de Datos.
+spring:
+  datasource:
+    #url: jdbc:h2:mem:test
+    url: jdbc:mysql://localhost/test?useSSL=false&serverTimezone=UTC
+    username: sa
+    password:
+  jpa:
+    hibernate: # ORM Object Relational Mapping.
+      ddl-auto: update # DDL Data Definition Language.
+  h2:
+    console:
+      enabled: true
+  output:
+    ansi:
+      enabled: always
